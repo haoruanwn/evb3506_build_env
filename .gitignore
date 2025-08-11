@@ -1,0 +1,5 @@
+.vscode/
+
+# 忽略sdk本体
+rk3506_linux6.1_rkr4_v1/
+rk3506_linux6.1_rkr4_v1.tar.gz
