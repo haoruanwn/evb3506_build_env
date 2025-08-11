@@ -60,6 +60,7 @@ RUN dpkg --add-architecture i386 && \
     expect-dev \
     cpio \
     unzip \
+    fakeroot \
     ca-certificates \
     sudo \
     && \
