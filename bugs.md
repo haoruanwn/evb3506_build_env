@@ -25,7 +25,7 @@
 
 ### 2\. 最终阶段生成update.img时报错
 
-- **SDK版本号**: `rk3506_linux6.1_rkr4_v1`
+  * **SDK版本号**: `rk3506_linux6.1_rkr4_v1`
 
   * **问题描述**
     在打包的最后一步，脚本会错误地使用安卓模式 (`androidos`) 来生成 `update.img`，导致打包失败。
@@ -33,18 +33,21 @@
     ![Snipaste_2025-08-12_12-14-15](https://markdownforyuanhao.oss-cn-hangzhou.aliyuncs.com/img1/20250812134300240.png)
 
   * **解决方案**
+  
+    **存疑** 或着`./build.sh cleanall`，再重新执行构建
+
     需要手动修改打包脚本，指定正确的操作系统类型。
 
     1.  打开脚本文件: `device/rockchip/common/scripts/mk-updateimg.sh`。
 
     2.  定位到以下代码行：
-
+    
         ```bash
         update.raw.img update.img -os_type:androidos
         ```
 
     3.  将其修改为：
-
+    
         ```bash
         update.raw.img update.img -os_type:linux
         ```
