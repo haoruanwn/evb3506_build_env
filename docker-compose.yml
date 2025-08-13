@@ -17,7 +17,7 @@ services:
     network_mode: host
     # 挂载卷
     volumes:
-      # 将宿主机的 ./rk3506_linux6.1_rkr4_v1 目录挂载到容器的 /home/builder/sdk
-      - ./rk3506_linux6.1_rkr4_v1:/home/builder/sdk
+      # 将当前整个目录挂载到容器的 /workspace，方便sdk访问config文件夹
+      - .:/workspace
     # 设置工作目录，进入容器后会自动切换到这个目录
-    working_dir: /home/builder/sdk
+    working_dir: /workspace
