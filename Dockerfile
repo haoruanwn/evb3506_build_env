@@ -69,7 +69,6 @@ RUN dpkg --add-architecture i386 && \
     rm -rf /var/lib/apt/lists/*
 
 # 创建一个名为 'builder' 的非 root 用户，并赋予其免密 sudo 权限
-# 这是为了安全起见，避免在容器中直接使用 root 用户进行编译等操作
 RUN useradd -m -s /bin/bash builder && \
     adduser builder sudo && \
     echo 'builder ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
