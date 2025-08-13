@@ -8,6 +8,8 @@
 
 只有开发板处于“LOADER” 或者“MASKROM”模式的时候才能烧录
 
+如果烧录时访问USB设备失败，需要添加udev规则
+
 ## 常用烧录指令
 
 进入sdk目录（rkflash.sh脚本所在的路径） ，注意是主机而不是docker容器
