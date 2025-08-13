@@ -37,3 +37,7 @@
     暂时没找到解决方案，但是这个操作是用来生产`update.img`用于整体烧录的，前面的操作已经获取了分区烧录需要的各个镜像，开发阶段可以分区烧录固件。
     
     ![Snipaste_2025-08-12_21-46-53](https://markdownforyuanhao.oss-cn-hangzhou.aliyuncs.com/img1/20250812234859066.png)
+
+* **后续更新**：
+
+  缺失包含 `hexdump` 命令的软件包导致的，需要安装`bsdmainutils`，已经在dockerfile里添加
