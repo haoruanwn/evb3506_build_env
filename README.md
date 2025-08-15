@@ -83,3 +83,4 @@
 
 - [交叉编译rust程序](./docs/交叉编译rust程序.md)
 - [Linux环境下的固件烧录](./docs/Linux环境下的固件烧录.md)
+- [使用 Buildroot 发送电子邮件](./docs/发送电子邮件.md)
