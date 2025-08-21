@@ -86,5 +86,5 @@
 
 - [交叉编译rust程序](./docs/交叉编译rust程序.md)
 - [Linux环境下的固件烧录](./docs/Linux环境下的固件烧录.md)
-- [使用 Buildroot 发送电子邮件](./docs/发送电子邮件.md)[交叉编译rust程序](./docs/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91rust%E7%A8%8B%E5%BA%8F.md)
+- [使用 Buildroot 发送电子邮件](./docs/发送电子邮件.md)
 - [WIFI模块和联网](./docs/WIFI模块与联网.md)
